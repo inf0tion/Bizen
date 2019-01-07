@@ -14,14 +14,16 @@ ThingSpeakに適当なデータを送信してみる，テスト用プログラ�
 
 info.jsonの各項目に，ThingSpeakのAPIを使うための情報を記述する．
 
-- CH
-    - Channel ID．URLとかページ内とかに書いてある．
-- api\_key
-    - ThingSpeakにログインしてAPI Keysタブを見れば書いてある．
-- num
-    - 作ったチャンネルに送信するデータの数．
-- res
-    - 取得するデータの数．
+- Data
+    - num
+        - 作ったチャンネルに送信するデータの数．
+    - res
+        - 取得するデータの数．
+- ThingSpeak
+    - CH
+        - Channel ID．URLとかページ内とかに書いてある．
+    - api\_key
+        - ThingSpeakにログインしてAPI Keysタブを見れば書いてある．
 
 ## 実行
 
