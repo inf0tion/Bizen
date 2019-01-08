@@ -1,6 +1,7 @@
 from numpy.random import *
 import json
 import ThingSpeak
+import Ambient
 
 if __name__=='__main__':
     with open('info.json') as f:
@@ -9,4 +10,5 @@ if __name__=='__main__':
     r = randint(0, 100, info['Data']['num'])
 
     ThingSpeak.testfunc(info['ThingSpeak'], info['Data'], r)
+    Ambient.testfunc(info['Ambient'], info['Data'], r)
 
