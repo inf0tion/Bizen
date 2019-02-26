@@ -7,7 +7,7 @@ def testfunc(info, datainfo, r):
     print('{0}'.format(r))
 
     try:
-        res = am.send({'d1':r[0].item(), 'd2':r[1].item()})
+        res = am.send({'d1':r[0], 'd2':r[1]})
         print(res)
         d = am.read(n=datainfo['res'])
         print(d)
